@@ -1,0 +1,35 @@
+/**
+ *
+ */
+
+/**
+ * @author internousdev
+ *
+ */
+public class Phone {
+	public interface NewFunction{
+		public abstract void call();
+		public abstract void mail();
+		public abstract void photo();
+		public abstract void internet();
+
+		public void play(){
+			System.out.println("再生")；
+		}
+		public void stop(){
+			System.out.println("停止");
+		}
+		public void next(){
+			System.out.println("次へ");
+		}
+		public void back(){
+			System.out.println("戻る");
+		}
+
+	}
+
+
+
+
+
+}
