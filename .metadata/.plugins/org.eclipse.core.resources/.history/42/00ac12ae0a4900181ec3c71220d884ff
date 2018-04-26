@@ -1,0 +1,9 @@
+package com.internousdev.webproj4.dao;
+
+public class TestDAO {
+
+	public List<LoginDTO> loginDTOList = newArrayList<LoginDTO>();
+
+
+
+}
