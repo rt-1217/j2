@@ -14,7 +14,6 @@
 <fullyQualifiedTypeName name="com.internousdev.webproj3.dao.TestDAO"/>
 <fullyQualifiedTypeName name="Com.internousdev.webproj4.dto.HelloStrutsDTO"/>
 <fullyQualifiedTypeName name="Com.internousdev.webproj4.dao.HelloStrutsDAO"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="com.internousdev.webproj4.dto.HelloStrutsDTO"/>
 <fullyQualifiedTypeName name="com.internousdev.webproj4.dao.HelloStrutsDAO"/>
 <fullyQualifiedTypeName name="com.internousdev.webproj4.dao.LoginDAO"/>
@@ -35,6 +34,8 @@
 <fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.internousdev.template.util.DBConnector"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 </qualifiedTypeNameHistroy>

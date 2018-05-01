@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="&quot;http://struts.apache.org/dtds/struts-2.3.dtd&quot;&gt;" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="&quot;http://struts.apache.org/dtds/struts-2.3.dtd&quot;&gt;"/>
+			<item value="&quot;-//Apache Software Foundation//DTD Struts Configuration 2.3//EN&quot;"/>
+			<item value="&lt;!DOCTYPE struts PUBLIC"/>
+			<item value="xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;"/>
+			<item value="org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter"/>
 			<item value="ewl"/>
 			<item value="prepared"/>
 		</list>
