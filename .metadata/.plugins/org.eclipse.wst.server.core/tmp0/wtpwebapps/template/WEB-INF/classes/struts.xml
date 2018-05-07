@@ -25,20 +25,13 @@
 </action>
 
 
-
-
-
-
-
-
-
 <!-- UserCreateAction -->
 <action name="UserCreateAction" class="com.internousdev.template.action.UserCreateAction" method="execute">
 <result name="success">userCreate.jsp</result>
 </action>
 
 <!-- UserCreateConfirmAction -->
-<action name="UserCreateConfirmAction" class="com.internousdev.template.action.UsernameCreateConfirmAction" method="execute">
+<action name="UserCreateConfirmAction" class="com.internousdev.template.action.UserCreateConfirmAction" method="execute">
 <result name="success">userCreateConfirm.jsp</result>
 <result name="error">userCreate.jsp</result>
 </action>
@@ -61,11 +54,6 @@
 <!-- MyPageAction -->
 <action name="MyPageAction" class="com.internousdev.template.action.MyPageAction" method="execute">
 <result name="success">myPage.jsp</result>
-</action>
-
-<!-- LogoutAction -->
-<action name="LogoutAction" class="com.internousdev.template.action.LogoutAction" method="execute">
-<result name="success">home.jsp</result>
 </action>
 
 
