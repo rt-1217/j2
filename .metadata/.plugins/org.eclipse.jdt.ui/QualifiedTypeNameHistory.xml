@@ -31,13 +31,16 @@
 <fullyQualifiedTypeName name="com.internousdev.webproj5.dao.InquiryCompleteDAO"/>
 <fullyQualifiedTypeName name="com.internousdev.webproj5.util.DBConnector"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="com.internousdev.template.util.DBConnector"/>
+<fullyQualifiedTypeName name="com.internousdev.template.dao.UserCreateCompleteDAO"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
-<fullyQualifiedTypeName name="com.internousdev.template.dao.UserCreateCompleteDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.template.util.DBConnector"/>
+<fullyQualifiedTypeName name="com.sun.jndi.ldap.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.internousdev.template.dao.MyPageDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.template.dto.MyPageDTO"/>
 </qualifiedTypeNameHistroy>

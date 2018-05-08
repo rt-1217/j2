@@ -1,0 +1,11 @@
+package com.internousdev.ecsite.util;
+
+public class DateUtil {
+	public String getDate(){
+		Date date = new Date();
+		SimpleDateFormat simpleDateFormat("yyyy/MM/ddHH:mm:ss");
+		return simpleDateformat(date);
+	}
+
+}
+

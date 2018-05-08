@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="imagetoolbar" content="no" />
@@ -68,7 +68,7 @@ clear:both;
 </div>
 
 <div>
-<s:if test="session.message ==''">
+<s:if test="session.message == ''">
 <h3>ご購入情報は以下になります</h3>
 <table>
 <tr>
@@ -117,7 +117,8 @@ clear:both;
 
 <div id="footer">
 <div id="pr">
-</div></div>
+</div>
+</div>
 
 
 </body>

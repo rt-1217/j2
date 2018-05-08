@@ -23,8 +23,8 @@ public class MyPageDAO {
 
 		try{
 			PreparedStatement preparedStatement= connection.prepareStatement(sql);
-			preparedStatement.setString(1, item_transaction_id);
-			preparedStatement.setString(2, user_master_id);
+			preparedStatement.setString(1,item_transaction_id);
+			preparedStatement.setString(2,user_master_id);
 			ResultSet resultSet = preparedStatement.executeQuery();
 
 			if(resultSet.next()){
