@@ -244,3 +244,5 @@
 0:0:0:0:0:0:0:1 - - [09/May/2018:17:22:24 +0900] "GET /Webproj5/TestAction.action;jsessionid=91B461FA29F96D72742FA1B4FE6CABB3?username=a&password=a HTTP/1.1" 200 9401
 0:0:0:0:0:0:0:1 - - [09/May/2018:17:22:49 +0900] "GET /Webproj5/TestAction.action;jsessionid=91B461FA29F96D72742FA1B4FE6CABB3?username=a&password= HTTP/1.1" 200 9401
 0:0:0:0:0:0:0:1 - - [09/May/2018:17:23:03 +0900] "POST /Webproj5/HelloStrutsAction.action;jsessionid=91B461FA29F96D72742FA1B4FE6CABB3 HTTP/1.1" 200 9436
+127.0.0.1 - - [09/May/2018:17:45:37 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [09/May/2018:17:45:40 +0900] "GET /Webproj5/hello.jsp HTTP/1.1" 200 423

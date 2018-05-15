@@ -1,0 +1,41 @@
+package com.internousdev.ecsite.action;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ItemSeachAction extends ActionSupport implements SessionAware {
+/**
+ * 検索ワード
+ */
+	private String seachWord;
+	private String message;
+	public Map<String,Object>session;
+
+	/**
+	 * 検索結果格納List
+	 */
+	private List<BuyItemDTO> buyItemDTOList = new ArrayList<BuyItemDTO>();
+
+	/**
+	 * 検索結果取得
+	 */
+	private ItemSeachDAO itemSeachDAO = new ItemSeachDAO();
+
+	/**
+	 * 実行メソッド
+	 */
+
+	@SuppressWarning("unchecked")
+	public String execute(){
+		String result= ERROR;
+
+		//ワードを入力したときのみ実行
+		if(seachWord.equals("")){
+			result=ERROR;
+			buyItemDTOLost=(List<BuyItemDTO>)session.get("buyItemDTOList");
+			setMessage("該当する商品が見つかりませんでした。")
+		}else {buyItemDTOList = itemSeachDAO.gゲット
+	}
+
+}
