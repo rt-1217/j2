@@ -1,21 +1,27 @@
 package com.internousdev.ecsite.dto;
 
 public class BuyItemDTO {
-	public int id;
+	/**
+	 * 商品情報を保管する変数
+	 */
 
-	public String itemName;
+	private int id;
 
-	public String itemPrice;
+	private String itemName;
 
-	public int count;
+	private String itemPrice;
 
-	public int total_price;
+	private int count;
 
-	public String pay;
+	private int total_price;
 
-	public int item_stock;
+	private String pay;
 
-	public int total_count;
+	private int item_stock;
+
+	private int total_count;
+
+	private String image_file_path;
 
 	public String getItemName() {
 		return itemName;
@@ -76,4 +82,14 @@ public class BuyItemDTO {
 	public void setTotal_count(int total_count){
 		this.total_count=total_count;
 	}
+
+
+	public String getImage_file_path(){
+		return image_file_path;
+	}
+	public void setImage_file_path(String image_file_path){
+		this.image_file_path=image_file_path;
+	}
+
+
 }

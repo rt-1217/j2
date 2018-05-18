@@ -13,15 +13,27 @@ public class BuyItemCompleteDAO {
 	private DateUtil dateUtil=new DateUtil();
 	private String sql = "INSERT INTO user_buy_item_transaction(item_transaction_id,total_price,total_count,user_master_id,pay,insert_date)VALUES(?,?,?,?,?,?)";
 
-	public void buyItemInfo(int item_transaction_id,String user_master_id,String total_price,int total_count,String pay,int item_stock)throws SQLException{
+	/**
+	 * 商品購入情報の登録メソッド
+	 * @param item_transaction_id
+	 * @param user_master_id
+	 * @param total_price
+	 * @param total_count
+	 * @param pay
+	 * @param item_stock
+	 * @throws SQLException
+	 */
+	public void buyItemInfo(int item_transaction_id,String user_master_id,int total_price,int total_count,String pay,int item_stock)throws SQLException{
 		try{
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, item_transaction_id);
-			preparedStatement.setString(2, total_price);
+			preparedStatement.setInt(2, total_price);
 			preparedStatement.setInt(3, total_count);
 			preparedStatement.setString(4, user_master_id);
 			preparedStatement.setString(5, pay);
 			preparedStatement.setString(6, dateUtil.getDate());
+
+			//購入した個数分減らす
 
 
 			int checkCount = preparedStatement.executeUpdate();

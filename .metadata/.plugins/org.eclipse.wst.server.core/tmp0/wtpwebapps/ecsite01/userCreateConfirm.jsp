@@ -73,6 +73,7 @@ clear:both;
 <tr id="box">
 <td>
 <label>ログインID:</label>
+
 </td>
 <td>
 <s:property value="loginUserId" escape="false"/>

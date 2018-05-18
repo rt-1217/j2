@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="s" uri="/struts-tags" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<!-- CSSの読み込み -->
+	<link rel="stylesheet" type="text/css" href="./css/basis.css">
+
+
+
+<title>ItemInsert</title>
+</head>
+<body>
+
+
+
+<!-- メイン -->
+
+<div id ="header">
+<div id="pr">
+</div></div>
+<div id="main">
+<div id="top">
+<p>Item Insert</p>
+</div>
+
+
+<div>
+<p>追加する商品の情報を入力してください。</p>
+<div>
+<table>
+<s:form method="post" action="ItemInsertAction">
+商品名<br>
+<input type="text" name="ItemName"/><br><br>
+
+値段<br>
+<input type="text" name="ItemPrice"/><br><br>
+
+在庫<br>
+<input type="text" name="ItemStock"/><br><br>
+
+画像パス<br>
+<input type="text" name="ImageFilePath"/><br><br>
+
+<s:submit class="button" value="商品を追加する"/>
+
+</s:form>
+
+</table>
+
+<div>
+<p><a href='<s:url action="GoHomeAction" />'>home</a></p>
+</div>
+
+<div id="footer">
+<div id="pr">
+</div></div>
+</div></div>
+</div>
+
+
+
+
+
+</body>
+</html>

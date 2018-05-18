@@ -11,12 +11,14 @@
 <action name="HomeAction" class="com.internousdev.ecsite.action.HomeAction"
 method="execute">
 <result name="login">login.jsp</result>
+<result name="master">master.jsp</result>
 <result name="success">buyItem.jsp</result>
 </action>
 
 <!-- LoginAction -->
 <action name="LoginAction" class="com.internousdev.ecsite.action.LoginAction"
 method="execute">
+<result name="master">master.jsp</result>
 <result name="success">buyItem.jsp</result>
 <result name="error">login.jsp</result>
 </action>
@@ -74,11 +76,21 @@ method="execute">
 <result name="error">error.jsp</result>
 </action>
 
-<!-- ItemSearchAction -->
-		<action name="ItemSearchAction" class="com.internousdev.ecsite.action.ItemSearchAction" method="execute">
-			<result name="success">buyItem.jsp</result>
-			<result name="error">buyItem.jsp</result>
-		</action>
+<!-- 商品検索 -->
+<action name="ItemSearchAction" class="com.internousdev.ecsite.action.ItemSearchAction" method="execute">
+<result name="success">buyItem.jsp</result>
+<result name="error">buyItem.jsp</result>
+</action>
+
+<!-- 商品の追加 -->
+<action name="GoItemInsertAction" class="com.internousdev.ecsite.action.GoItemInsertAction" method="execute">
+<result name="success">itemInsert.jsp</result>
+</action>
+
+<action name ="ItemInsertAction" class="com.internousdev.ecsite.action.ItemInsertAction" method="execute">
+<result name="success">itemInsertComplete.jsp</result>
+<result name="error">itemInsert.jsp</result>
+</action>
 
 
 </package>

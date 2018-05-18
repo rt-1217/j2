@@ -11,46 +11,13 @@
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
+
+
+<!-- CSSの読み込み -->
+<link rel="stylesheet" type="text/css" href="./css/basis.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
 <title>BuyItem画面</title>
-<style type="text/css">
-/* ========TAG LAYOUT======== */
-body {
-margin:0;
-padding:0;
-line-height:1.6;
-letter-spacing:1px;
-font-family:Verdana, Helvetica, sans-serif;
-font-size:12px;
-color:#333;
-background:#fff;
-}
-table {
-text-align:center;
-margin:0 auto;
-}
-/* ========ID LAYOUT======== */
-#top {
-width:780px;
-margin:30px auto;
-border:1px solid #333;
-}
-#header {
-width: 100%;
-height: 80px;
-background-color: black;
-}
-#main {
-width: 100%;
-height: 100%;
-text-align: center;
-}
-#footer {
-width: 100%;
-height: 80px;
-background-color: black;
-clear:both;
-}
-</style>
 </head>
 
 <body>
@@ -63,6 +30,7 @@ clear:both;
 <p>BuyItem</p>
 </div>
 
+<!-- 商品検索機能 -->
 <div>
 <s:form action="ItemSearchAction">
 <tr>
@@ -79,48 +47,42 @@ clear:both;
 
 
 
+<!-- 商品テーブル -->
+<table>
 
 <s:form action="BuyItemAction">
-<table>
-<s:iterator value="buyItemDTOList">
 
-<tr>
-<td>
+<s:iterator value="#session.buyItemDTOList">
+<dl class ="dl-list">
+<dd class="dd-list">
+
+<img class="image" style="width:30%; height:auto;" src="<s:property value='image_file_path'/>" >
+
+
 
 <h3><s:property value="itemName"/></h3>
-</td>
-</tr>
 
 
-<tr>
-<td>
-<span>値段</span>
-</td>
-<td>
+
+
+<span>値段：</span>
+
 <s:property value="itemPrice" /><span>円</span>
-</td>
-</tr>
-<tr>
-<td>
-<span>在庫</span>
-</td>
-<td>
+
+<span>在庫：</span>
+
+
 <s:if test="item_stock>0">
 <s:property value="item_stock"/>
 </s:if>
 <s:else>
 <span>品切れ</span>
 </s:else>
+<br>
 
 
 
-</td>
-</tr>
-<tr>
-<td>
 <span>購入個数</span>
-</td>
-<td>
 <s:if test="item_stock>0">
 <select name="count">
 <option value="0" selected="selected">0</option>
@@ -134,21 +96,19 @@ clear:both;
 <s:else>
 <select name="count">
 <option value="0" selected="selected">0</option>
+
+
 </select></s:else>
-</td>
-</tr>
-<tr><td><br>
-</td>
-</tr>
+
+</dd>
+</dl>
 </s:iterator>
 
 
 
-<tr>
-<td>
+<tr><td>
 <span>支払い方法</span>
-</td>
-<td>
+
 <input type="radio" name="pay" value="1" checked="checked">現金払い
 <input type="radio" name="pay" value="2" >クレジットカード
 </td>
@@ -159,8 +119,9 @@ clear:both;
 </td>
 </tr>
 
-</table>
 </s:form>
+
+</table>
 
 <div>
 <p>前画面に戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>

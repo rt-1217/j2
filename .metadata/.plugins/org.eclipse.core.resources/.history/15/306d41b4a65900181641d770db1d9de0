@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+.item-table{
+	text-align:left;
+
+}
+
+
+.dl-list{
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+
+.dd-list{
+	width:31%;
+	display:inline-block;
+	background-color:rgba(255,255,255,0.4);
+ 	font-size: 12px;
+ 	float:left;
+	margin:0;
+	padding:15px 0px;
+	margin-left:2%;
+	margin-bottom:20px;
+}
