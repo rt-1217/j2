@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;b074.jpg&apos; to &apos;image&apos;&#x0D;&#x0A;- 元のプロジェクト: &apos;MyEc3&apos;&#x0D;&#x0A;- 宛先要素: &apos;image&apos;&#x0D;&#x0A;- オリジナル要素: &apos;b074.jpg&apos;" description="ファイルをコピー" element1="WebContent/image/b074.jpg" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1527059114053" target="/ecsite01/WebContent/image" units="0" version="1.0"/>
+</session>

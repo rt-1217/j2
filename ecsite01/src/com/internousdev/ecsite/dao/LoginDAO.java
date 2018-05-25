@@ -30,6 +30,7 @@ public class LoginDAO {
 				loginDTO.setUserAddress(resultSet.getString("user_address"));
 				loginDTO.setUserSex(resultSet.getString("user_sex"));
 				loginDTO.setUserTell(resultSet.getString("user_tell"));
+				loginDTO.setUserNumber(resultSet.getString("id"));
 
 				if(!(resultSet.getString("login_id").equals(null))){
 					loginDTO.setLoginFlg(true);

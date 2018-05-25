@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="s" uri="/struts-tags" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<!-- CSSの読み込み -->
+<link rel="stylesheet" type="text/css" href="./css/basis.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+<title>UserUpdateConfirm</title>
+</head>
+<body>
+<div id="header">
+<div id="pr">
+</div></div>
+
+<div id="main">
+<div id="top">
+<p>User Update Confirm</p>
+</div>
+<div>
+<h3>変更する内容は以下でよろしいですか？</h3>
+<table>
+<s:form action="UserUpdateCompleteAction">
+
+ログインID
+<s:property value="loginUserId" escape="false"/><br>
+
+<label>ログインPASS</label>
+<s:property value="loginPassword" escape="false"/>
+
+<label>ユーザー名</label>
+<s:property value="userName" escape="false"/>
+
+<label>性別</label>
+<s:property value="sex" escape="false"/>
+
+<label>住所</label>
+<s:property value="userAddress" escape="false"/>
+
+<label>電話番号</label>
+<s:property value="tell" escape="false"/>
+
+<s:submit value="完了"/>
+</s:form>
+</table>
+</div>
+</div>
+
+
+<div id="footer">
+<div id="pr">
+</div></div>
+</body>
+</html>

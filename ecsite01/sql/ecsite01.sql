@@ -52,7 +52,10 @@ delete_date datetime
 INSERT INTO item_info_transaction(item_name,item_price,item_stock,image_file_path) VALUES
 ("トマト",80,50,"./image/tomato.jpg"),
 ("ニンジン",70,50,"./image/carrot.jpg"),
-("ピーマン",25,50,"./image/greenpepper.jpg");
+("ピーマン",25,50,"./image/greenpepper.jpg"),
+("キャベツ",120,30,"./image/cabbage.jpg"),
+("カボチャ",250,20,"./image/pumpkin.jpg"),
+("スターフルーツ",300,10,"./image/starfruits.jpg");
 INSERT INTO login_user_transaction(login_id,login_pass,user_name,user_address,user_sex,user_tell) VALUES
 ("jiro","456","test","saitama","男","09012345678"),
 ("taro","123","master","tokyo","男","09077777777");

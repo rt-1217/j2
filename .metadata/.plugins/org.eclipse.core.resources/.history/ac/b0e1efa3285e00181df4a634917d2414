@@ -1,0 +1,17 @@
+package com.internousdev.ecsite.action;
+
+public class ItemUpdateCompleteAction extends ActionSupport implements SessionAware {
+
+	public Map<String,Object> session;
+
+	//後で数値を入れるので空のbuyItemDTOListを宣言しておく。
+
+	private ArrayList<BuyItemDTO> buyItemDTOList = new ArrayList<>();
+
+	/**
+	 * 実行メソッド
+	 */
+
+	public
+
+}

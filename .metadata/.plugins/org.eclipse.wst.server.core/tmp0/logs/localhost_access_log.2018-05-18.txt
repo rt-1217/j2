@@ -315,3 +315,14 @@
 0:0:0:0:0:0:0:1 - - [18/May/2018:16:37:34 +0900] "POST /MyEc/GoMasterPageAction HTTP/1.1" 200 2893
 0:0:0:0:0:0:0:1 - - [18/May/2018:16:37:36 +0900] "GET /MyEc/GoItemInventoryAction.action HTTP/1.1" 200 15153
 0:0:0:0:0:0:0:1 - - [18/May/2018:16:37:36 +0900] "GET /MyEc/script/select-button.js HTTP/1.1" 404 1075
+127.0.0.1 - - [18/May/2018:17:47:20 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:47:23 +0900] "GET /ecsite01/itemDelete.jsp HTTP/1.1" 200 1227
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:47:23 +0900] "GET /ecsite01/css/basis.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:47:23 +0900] "GET /ecsite01/css/table.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:50:00 +0900] "GET /ecsite01/itemDelete.jsp HTTP/1.1" 200 1359
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:50:16 +0900] "GET /ecsite01/itemDelete.jsp HTTP/1.1" 200 1363
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:50:16 +0900] "GET /ecsite01/css/basis.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:50:16 +0900] "GET /ecsite01/css/table.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:50:16 +0900] "GET /ecsite01/itemDelete.jsp HTTP/1.1" 200 1363
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:50:16 +0900] "GET /ecsite01/css/basis.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/May/2018:17:50:16 +0900] "GET /ecsite01/css/table.css HTTP/1.1" 304 -

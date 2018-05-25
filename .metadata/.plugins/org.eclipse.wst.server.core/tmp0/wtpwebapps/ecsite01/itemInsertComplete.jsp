@@ -38,7 +38,7 @@
 <s:property value="session.itemName"/><br><br>
 
 値段：
-<s:property value="session.itemName"/><br><br>
+<s:property value="session.itemPrice"/><br><br>
 
 在庫：
 <s:property value="session.itemStock"/><br><br>

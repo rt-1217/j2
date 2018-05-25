@@ -10,10 +10,11 @@
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<title>Home画面</title>
 
+<title>Home画面</title>
 <style type="text/css">
-body{
+/* =================TAG LAYOUT==================== */
+body {
 margin:0;
 padding:0;
 line-height:1.6;
@@ -27,7 +28,7 @@ table {
 text-align:center;
 margin:0 auto;
 }
-/* =================ecsite LAYOUT================ */
+/* =============ID LAYOUT================ */
 #top {
 width:780px;
 margin:30px auto;
@@ -49,12 +50,13 @@ height: 80px;
 background-color: black;
 clear:both;
 }
-#text-center {
+#text-link {
 display: inline-block;
-text-align: center;
+text-align: right;
 }
 
 </style>
+
 </head>
 <body>
 <div id="header">

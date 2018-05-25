@@ -1,7 +1,0 @@
-package com.internousdev.ecsite.dao;
-
-public class ItemSeachDAO {
-	private DBCOnnecttor dbConnector  =new DBConnector();
-
-
-}

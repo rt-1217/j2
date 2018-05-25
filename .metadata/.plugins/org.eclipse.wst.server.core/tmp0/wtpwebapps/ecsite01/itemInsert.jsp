@@ -56,7 +56,7 @@
 </table>
 
 <div>
-<p><a href='<s:url action="GoHomeAction" />'>home</a></p>
+<p><a href='<s:url action="HomeAction" />'>home</a></p>
 </div>
 
 <div id="footer">
