@@ -27,9 +27,7 @@
 </div>
 <h2>ユーザー情報を変更しました。</h2>
 
-<div>
-<a href='<s:url action="MyPageAction"/>'>マイページへ</a>
-</div>
+
 <div>
 <a href='<s:url action="LogoutAction"/>'>ログインへ</a>
 </div>

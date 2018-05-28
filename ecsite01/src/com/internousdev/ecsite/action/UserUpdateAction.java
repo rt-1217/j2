@@ -53,8 +53,9 @@ public class UserUpdateAction extends ActionSupport implements SessionAware {
 				}
 
 				if(idCheck){
-					System.out.println(loginUserId);
-					System.out.println(defaultLoginId);
+//					System.out.println(loginUserId);
+//					System.out.println(defaultLoginId);
+
 					session.put("loginUserId", loginUserId);
 					session.put("loginPassword", loginPassword);
 					session.put("userName", userName);

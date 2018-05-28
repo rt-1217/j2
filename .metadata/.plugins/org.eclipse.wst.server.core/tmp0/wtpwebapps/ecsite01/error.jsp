@@ -5,6 +5,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- CSSの読み込み -->
+<link rel="stylesheet" type="text/css" href="./css/basis.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
 <title>Error Page</title>
 </head>
 <body>

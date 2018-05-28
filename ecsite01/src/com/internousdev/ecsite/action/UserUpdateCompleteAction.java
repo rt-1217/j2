@@ -18,8 +18,8 @@ public class UserUpdateCompleteAction extends ActionSupport implements SessionAw
 
 		String result =ERROR;
 
-		String name=session.get("sex").toString();
-		System.out.println(name);
+//		String name=session.get("sex").toString();
+//		System.out.println(name);
 
 		boolean checkUpdate = userUpdateCompleteDAO.userUpdateInfo (session.get("loginUserId").toString(),
 				session.get("loginPassword").toString(),

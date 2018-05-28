@@ -118,6 +118,11 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 					}
 				return result;
 				}
+
+
+
+
+
 	public List<String> getCount(){
 		return count;
 	}

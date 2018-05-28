@@ -1,0 +1,17 @@
+package com.internousdev.ecsite.dao;
+
+import com.internousdev.ecsite.util.DBConnector;
+
+public class UserDeleteDAO {
+
+	/**
+	 * ユーザー情報削除メソッド
+	 */
+
+	private DBConnector dbConnector = new DBConnector();
+	private Connection connection =dbConnector.getConnection();
+	public int userDeleteInfo(String deleteId) throws SQLException{
+		String sql= "DELETE FROM login_user_transaction WHERE login_id=?";
+	}
+
+}

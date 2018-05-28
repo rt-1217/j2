@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="s" uri="/struts-tags" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<!-- CSSの読み込み -->
+	<link rel="stylesheet" type="text/css" href="./css/basis.css">
+	<link rel="stylesheet" type="text/css" href="./css/table.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+function submitAction(url) {
+$('form').attr('action', url);
+$('form').submit();
+}
+</script>
+
+
+<title>Item Delete Complete画面</title>
+</head>
+<body>
+<div id="header">
+<div id="pr">
+</div></div>
+<div id="main">
+<div id="top">
+
+
+<p>Item Delete Complete</p>
+</div>
+<table>
+<s:form>
+
+<span>商品を</span><s:property value="session.itemDeleteListSize"/><span>件削除しました。</span>
+
+</s:form>
+</table>
+
+<div>
+
+<div>
+<input type="button" class="button" value="管理ページに戻る" onclick="submitAction('GoMasterPageAction')" /></div>
+<a href='<s:url action="GoHomeAction"/>'>Home</a>
+<div>
+
+
+
+</div>
+</div>
+
+<div id="footer">
+<div id="pr"></div></div>
+
+</body>
+</html>

@@ -12,13 +12,21 @@ public class UserCreateCompleteAction extends ActionSupport implements SessionAw
 	private String loginUserId;
 	private String loginPassword;
 	private String userName;
+	private String sex;
+	private String tell;
+
 	public Map<String,Object> session;
 	private UserCreateCompleteDAO userCreateCompleteDAO = new UserCreateCompleteDAO();
 
 	public String execute() throws SQLException{
-		userCreateCompleteDAO.createUser(session.get("loginUserId").toString(),
+		userCreateCompleteDAO.createUser(
+				session.get("loginUserId").toString(),
 				session.get("loginPassword").toString(),
-				session.get("userName").toString());
+				session.get("userName").toString(),
+				session.get("userAddress").toString(),
+				session.get("sex").toString(),
+				session.get("tell").toString());
+
 
 		String result=SUCCESS;
 		return result;
@@ -43,12 +51,26 @@ public class UserCreateCompleteAction extends ActionSupport implements SessionAw
 	public void setUserName(String userName){
 		this.userName=userName;
 	}
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getTell() {
+		return tell;
+	}
+
+	public void setTell(String tell) {
+		this.tell = tell;
+	}
 
 
 
-	public Map<String,Object> getSession(){
-		return session;
-		}
+
+
 
 
 	@Override

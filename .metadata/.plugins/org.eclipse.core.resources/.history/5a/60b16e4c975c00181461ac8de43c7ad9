@@ -1,9 +1,0 @@
-package com.internousdev.ecsite.action;
-
-public class GoItemDeleteAction extends ActionSupport implements SessionAware {
-	public Map<String,Object> session;
-	private BuyItemDAO buyItemDAO=new BuyItemDAO();
-	private BuyItemDTO buyItemDTO=new BuyItemDTO();
-	private List<BuyItemDTO> buyItemDTOList;
-
-}

@@ -13,6 +13,14 @@
 <!-- CSSの読み込み -->
 	<link rel="stylesheet" type="text/css" href="./css/basis.css">
 	<link rel="stylesheet" type="text/css" href="./css/table.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+function submitAction(url) {
+$('form').attr('action', url);
+$('form').submit();
+}
+</script>
 
 
 <title>Item Delete Complete画面</title>
@@ -38,15 +46,17 @@
 <div>
 
 <div>
-<input type="button" class="button" value="管理ページに戻る" onclick="submitAction('GoMasterPageAction')" />
+<input type="button" class="button" value="管理ページに戻る" onclick="submitAction('GoMasterPageAction')" /><br></div>
+
+<div>
 <a href='<s:url action="GoHomeAction"/>'>Home</a></div>
 <div>
-<a href='<s:url action="HomeAction"/>'>管理画面へ</a></div>
+
 
 
 </div>
 </div>
-
+</div>
 <div id="footer">
 <div id="pr"></div></div>
 

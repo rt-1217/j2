@@ -50,7 +50,7 @@ public class BuyItemDAO {
 }
 	return buyItemDTOList;
 	}
-	public List<BuyItemDTO> getBuyItemDTO(){
+	public List<BuyItemDTO> getBuyItemDTOList(){
 		return buyItemDTOList;
 	}
 }
