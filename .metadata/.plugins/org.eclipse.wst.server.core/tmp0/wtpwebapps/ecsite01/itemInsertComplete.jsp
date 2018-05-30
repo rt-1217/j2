@@ -19,9 +19,7 @@
 <body>
 
 
-<div id="header">
-<div id="pr">
-</div></div>
+<s:include value="header.jsp"/>
 <div id="main">
 <div id="top">
 <p>ITEM INSERT COMPLETE</p>
@@ -62,12 +60,7 @@
 </div>
 
 
-
-<div id="footer">
-<div id="pr">
-</div></div>
-
-
+<s:include value="footer.jsp"/>
 
 
 

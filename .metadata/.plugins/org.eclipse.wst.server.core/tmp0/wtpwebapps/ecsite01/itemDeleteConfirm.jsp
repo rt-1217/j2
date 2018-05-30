@@ -12,15 +12,13 @@
 
 <!-- CSSの読み込み -->
 	<link rel="stylesheet" type="text/css" href="./css/basis.css">
-	<link rel="stylesheet" type="text/css" href="./css/table.css">
+<link rel="stylesheet" type="text/css" href="./css/table.css">
 
 
 <title>itemDeleteConfirm画面</title>
 </head>
 <body>
-<div id ="header">
-<div id="pr">
-</div></div>
+<s:include value="header.jsp"/>
 <div id="main">
 <div id="top">
 <p>Item Delete Confirm</p>
@@ -50,9 +48,6 @@
 
 </div>
 </div>
-<div id="footer">
-<div id="pr">
-</div>
-</div>
+<s:include value="footer.jsp"/>
 </body>
 </html>

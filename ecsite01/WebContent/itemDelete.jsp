@@ -12,29 +12,27 @@
 
 <!-- CSSの読み込み -->
 	<link rel="stylesheet" type="text/css" href="./css/basis.css">
-	<link rel="stylesheet" type="text/css" href="./css/table.css">
-
+<!-- <link rel="stylesheet" type="text/css" href="./css/table.css"> -->
 
 <title>Item Delete画面</title>
 </head>
 <body>
 
-<div id ="header">
-<div id="pr">
-</div></div>
+<s:include value="header.jsp"/>
 <div id="main">
 <div id="top">
 <p>Item Delete</p>
 </div>
 
-<p>削除したい商品を選択してください。</p>
+<h3>削除したい商品を選択してください。</h3>
 <table>
 <s:form action="ItemDeleteAction">
-
+<dl class ="dl-list">
 <s:iterator value="buyItemDTOList">
 
+<dd class="dd-list">
 
-<img class="image" style="width:30%; height:auto;" src="<s:property value='image_file_path'/>" >
+<img class="image" style="width:230px; height:150px;" src="<s:property value='image_file_path'/>" >
 
 <br>
 <br>
@@ -52,12 +50,24 @@
 <input class="check-box" type="checkbox" name="deleteName" value="<s:property value='itemName'/>">
 <br>
 
-
-
-</s:iterator>
+</dd></s:iterator></dl>
 <div class="clear"></div>
+
+<div class="pay-push"></div>
+
+
+
+
+
 <br><br>
+
+
+<!-- <div id="button"> -->
+
 <s:submit class="button" value="商品を削除する"/>
+
+<!-- </div> -->
+
 </s:form>
 </table>
 <br>
@@ -65,38 +75,13 @@
 
 <a href='<s:url action="HomeAction"/>'>管理者画面へ</a><br>
 
-
+</div>
 
 </div>
 
 
 
-</div>
-<div id="footer">
-		<div id="pr">
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<s:include value="footer.jsp"/>
 
 </body>
 </html>

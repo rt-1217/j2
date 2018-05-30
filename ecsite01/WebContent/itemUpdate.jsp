@@ -12,13 +12,11 @@
 
 <!-- CSSとSCRIPTの読み込み -->
 	<link rel="stylesheet" type="text/css" href="./css/basis.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="./css/table.css"> -->
 <title>itemUpdate</title>
 </head>
 <body>
-<div id="header">
-<div id="pr">
-</div></div>
+<s:include value="header.jsp"/>
 <div id="main">
 <div id="top">
 <p>Item Update</p>
@@ -31,12 +29,28 @@
 </div>
 <table>
 <s:form method="post" action="ItemUpdateAction">
+
+<dl class ="dl-list">
 <s:iterator value="buyItemDTOList">
-<s:property value="itemName"/>
+<dd class="dd-list">
+<img class="image" style="width:230px; height:150px;" src="<s:property value='image_file_path'/>" >
 
-<input type="radio" name="id" value="<s:property value='id'/>"><br>
+<h3><s:property value="itemName"/></h3>
 
+
+<span>値段：</span><s:property value="itemPrice" /><span>円</span>
+
+
+
+<span>在庫：</span><s:property value="item_stock"/><span>個</span>
+<br>
+
+<input type="radio" name="id" value="<s:property value='id'/>">
+
+</dd>
 </s:iterator>
+</dl>
+
 
 <s:submit  value="選択"/>
 </s:form>
@@ -50,8 +64,6 @@
 
 </div>
 </div>
-<div id="footer">
-<div id="pr">
-</div></div>
+<s:include value="footer.jsp"/>
 </body>
 </html>

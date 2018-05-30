@@ -26,9 +26,7 @@ $('form').submit();
 <title>Item Delete Complete画面</title>
 </head>
 <body>
-<div id="header">
-<div id="pr">
-</div></div>
+<s:include value="header.jsp"/>
 <div id="main">
 <div id="top">
 
@@ -57,8 +55,6 @@ $('form').submit();
 </div>
 </div>
 </div>
-<div id="footer">
-<div id="pr"></div></div>
-
+<s:include value="footer.jsp"/>
 </body>
 </html>

@@ -12,13 +12,11 @@
 
 <!-- CSSとSCRIPTの読み込み -->
 	<link rel="stylesheet" type="text/css" href="./css/basis.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/table.css">
 <title>ItemUpdateComplete</title>
 </head>
 <body>
-<div id="header">
-<div id="pr">
-</div></div>
+<s:include value="header.jsp"/>
 <div id="main">
 <div id="top">
 <p>更新完了画面</p>
@@ -67,8 +65,6 @@
 
 
 </div>
-<div id ="footer">
-<div id="pr">
-</div></div>
+<s:include value="footer.jsp"/>
 </body>
 </html>

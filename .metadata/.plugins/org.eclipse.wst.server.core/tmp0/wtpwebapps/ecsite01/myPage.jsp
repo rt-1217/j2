@@ -12,7 +12,7 @@
 <meta name="keywords" content="" />
 <!-- CSSの読み込み -->
 <link rel="stylesheet" type="text/css" href="./css/basis.css">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/table.css">
 
 <title>MyPage画面</title>
 
@@ -21,9 +21,7 @@
 </head>
 <body>
 
-<div id="header">
-<div id="pr">
-</div></div>
+<s:include value="header.jsp"/>
 <div id="main">
 <div id="top">
 <p>MyPage</p>
@@ -103,11 +101,7 @@
 
 </div>
 
-<div id="footer">
-<div id="pr">
-</div>
-</div>
-
+<s:include value="footer.jsp"/>
 
 
 

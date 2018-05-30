@@ -1,0 +1,11 @@
+package com.internousdev.ecsite.action;
+
+public class ProductPageAction {
+
+	public Map<String,Object> session;
+
+	private BuyItemDAO buyItemDAO = new BuyItemDAO();
+
+	private List<BuyItemDTO> buyItemDTOList;
+
+}

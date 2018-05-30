@@ -1,7 +1,0 @@
-package com.internousdev.ecsite.action;
-
-public class ItemUpdateAction extends ActionSupport implements SessionAware {
-
-
-
-}

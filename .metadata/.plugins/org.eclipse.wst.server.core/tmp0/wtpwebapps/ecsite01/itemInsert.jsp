@@ -12,6 +12,7 @@
 
 <!-- CSSの読み込み -->
 	<link rel="stylesheet" type="text/css" href="./css/basis.css">
+	<link rel="stylesheet" type="text/css" href="./css/table.css">
 
 
 
@@ -23,9 +24,7 @@
 
 <!-- メイン -->
 
-<div id ="header">
-<div id="pr">
-</div></div>
+<s:include value="header.jsp"/>
 <div id="main">
 <div id="top">
 <p>Item Insert</p>
@@ -59,11 +58,11 @@
 <p><a href='<s:url action="HomeAction" />'>home</a></p>
 </div>
 
-<div id="footer">
-<div id="pr">
-</div></div>
+
 </div></div>
 </div>
+
+<s:include value="footer.jsp"/>
 
 
 

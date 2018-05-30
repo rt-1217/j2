@@ -12,8 +12,11 @@
 <meta name="keywords" content="" />
 <!-- CSSの読み込み -->
 <link rel="stylesheet" type="text/css" href="./css/basis.css">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
-
+<link rel="stylesheet" type="text/css" href="./css/table.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+</style>
+<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
 
 <title>Home画面</title>
 
@@ -21,18 +24,49 @@
 
 </head>
 <body>
-<div id="header">
-<div id="pr">
-</div></div>
+
+<!-- <div id="header"> -->
+<!-- <div class="header-logo">O N L I N E   S H O P </div> -->
+
+<!-- <div class="top-menu"> -->
+
+<!-- <div class="left-list"> -->
+<!-- <ul class="top-li"> -->
+<%-- <li><a href='<s:url action="GoHomeAction"/>'>TOP</a></li> --%>
+<%-- <li><a href='<s:url action="ProductPageAction"/>'>PRODUCT</a></li> --%>
+<%-- <li><a href='<s:url action="UserCreateAction"/>'>SIGNUP</a></li> --%>
+<!-- </ul> -->
+<!-- </div> -->
+
+<!-- <div class="right-list"> -->
+<!-- <ul> -->
+<%-- <li><a href='<s:url action="GoLoginAction"/>'>LOGIN</a></li> --%>
+<%-- <li><a href='<s:url action="MyPageAction"/>'>MYPAGE</a></li> --%>
+<%-- <li><a href='<s:url action="LogoutAction"/>'>LOGOUT</a></li> --%>
+<%-- <li><a href='<s:url action="InquiryAction"/>'>MAIL</a></li> --%>
+<!-- </ul> -->
+
+<!-- </div> -->
+
+
+
+
+<!-- </div> -->
+
+<!-- </div> -->
+<s:include value="header.jsp"/>
+
 <div id="main">
 <div id="top">
-<p>Home</p>
+<p>TOP PAGE</p>
 </div>
 
 <div id="text-center">
-<s:form action="HomeAction">
-<s:submit value ="商品購入"/>
-</s:form>
+<%-- <s:form action="HomeAction"> --%>
+<!-- <input id="submit_button" type="submit" value ="商品購入"> -->
+<%-- </s:form> --%>
+
+<img src="./image/homeyasai.jpg" width="95%" height="auto">
 
 <s:if test="#session.id !=null">
 <p>ログアウトする場合は
@@ -44,9 +78,14 @@
 
 </div>
 
-<div id="footer">
-<div id="pr">
-</div></div>
+<s:include value="footer.jsp"/>
+<!-- <div id="footer"> -->
+<!-- <div class="fotter-message"> -->
+<!-- Copyright©2018 TEST. All Rights Reserved. -->
+
+<!-- </div> -->
+
+<!-- </div> -->
 
 
 </body>

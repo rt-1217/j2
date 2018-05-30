@@ -15,15 +15,13 @@
 
 <!-- CSSの読み込み -->
 <link rel="stylesheet" type="text/css" href="./css/basis.css">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/table.css">
 
 <title>BuyItem画面</title>
 </head>
 
 <body>
-<div id="header">
-<div id ="pr">
-</div></div>
+<s:include value="header.jsp"/>
 
 <div id="main">
 <div id="top">
@@ -32,6 +30,7 @@
 
 <!-- 商品検索機能 -->
 <div>
+<div class="seach">
 <s:form action="ItemSearchAction">
 <tr>
 <td>
@@ -44,20 +43,20 @@
 <s:if test="message !=''">
 <h3><s:property value="message" escape="false"/></h3>
 </s:if>
+</div>
 
-
-
+<br>
 <!-- 商品テーブル -->
 <table>
 
 <s:form action="BuyItemAction">
-
-<s:iterator value="#session.buyItemDTOList">
 <dl class ="dl-list">
+<s:iterator value="#session.buyItemDTOList">
+
 <dd class="dd-list">
 
-<img class="image" style="width:30%; height:auto;" src="<s:property value='image_file_path'/>" >
-
+<img class="image" style="width:230px; height:150px;" src="<s:property value='image_file_path'/>" >
+<br>
 
 
 <h3><s:property value="itemName"/></h3>
@@ -103,24 +102,23 @@
 </select></s:else>
 
 </dd>
-</dl>
 </s:iterator>
+</dl>
 
 
+<div class="clear"></div>
 
-<tr><td>
-<span>支払い方法</span>
+<div class="pay-push"></div>
+<div class="pay">
+<span>支払い方法</span><br>
 
-<input type="radio" name="pay" value="1" checked="checked">現金払い
+<input type="radio" name="pay" value="1" checked="checked">現金払い<br>
 <input type="radio" name="pay" value="2" >クレジットカード
-</td>
-</tr>
-<tr>
-<td>
-<s:submit value="購入"/>
-</td>
-</tr>
 
+<br><br>
+<s:submit value="購入"/>
+
+</div>
 </s:form>
 
 </table>
@@ -140,9 +138,7 @@
 
 
 
-<div id="footer">
-<div id="pr">
-</div></div>
+<s:include value="footer.jsp"/>
 
 
 

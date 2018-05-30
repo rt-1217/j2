@@ -7,6 +7,7 @@ padding:0;
 line-height:1.6;
 letter-spacing:1px;
 font-family:Verdana, Helvetica, sans-serif;
+/* font-family: 'Mystery Quest', cursive; */
 font-size:12px;
 color:#333;
 background:#fff;
@@ -26,28 +27,162 @@ margin:0 auto;
 /* ========ID LAYOUT======== */
 #top {
 width:780px;
-margin:30px auto;
-border:2px solid #333;
-}
-#header {
-width: 100%;
-height: 80px;
-/* background-color: black; */
-background-image:url("../image/hanabi2.jpg");
+height:100px;
+margin:10px auto;
+border:2px solid #d0f7ee;
+background-image:url("../image/pastel3.jpg");
+font-family: 'Mystery Quest', cursive;
+font-size:30px;
+font-weight: bold;
 
 }
+
+
+/*リスト関係*/
+
+ul{
+	list-style:none;
+}
+
+li {
+	font-family: 'Mystery Quest', cursive;
+	float:left;
+	margin-right:20px;
+	font-weight: bolder;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*リンク関係*/
+
+/*色の指定*/
+a:link { color: #ff0000; }
+a:visited { color: #333; }
+a:hover { color: #00ff00; background-color:rgba(230,200,193,0.5)}
+a:active { color: #00ffff; }
+
+
+/*リンクの下線を消す*/
+a{
+	text-decoration: none;
+}
+
+input#submit_button {
+    padding: 15px 40px;
+    font-size: 7em;
+}
+
+
+
+
+/*--------------------------------------------------------------------------*/
+/*ヘッダー*/
+#header {
+width: 100%;
+height: 100px;
+top:0;
+left:0;
+/* position: fixed; */
+margin-bottom:50px;
+padding-bottom:15px;
+/* background-color: black; */
+background-image:url("../image/green.jpg");
+}
+
+/*サイトロゴ*/
+.header-logo{
+/* 	font-family: 'Press Start 2P', cursive; */
+font-family: 'Mystery Quest', cursive;
+	margin-bottm:20px;
+	text-align:center;
+	font-size:65px;
+	padding-top:10px;
+	color:#ffff11;
+	font-weight:900;
+	text-shadow: 5px 5px 1px #c0c0c0;
+}
+
+/*上部メニューリスト*/
+.top-menu{
+	height:40px;
+	background-image:url("../image/mizuiro.jpg");
+	width:auto;
+
+}
+.left-list{
+	float:left;
+}
+
+.right-list{
+	float:right;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------*/
+
 #main {
 width: 100%;
-height: 100%;
+height: auto;
 text-align: center;
+display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-#footer {
-width: 100%;
-height: 80px;
-background-color: black;
-clear:both;
-background-image:url("../image/hanabi2.jpg");
+
+
+/*--------------------------------------------------------------------------*/
+/*フッター*/
+
+/* #footer { */
+/* width: 100%; */
+/* height: 80px; */
+/* background-color: black; */
+/* clear:both; */
+/* background-image:url("../image/green.jpg"); */
+/* margin-top: auto; */
+/* position; absolute; */
+/* bottom:0; */
+
+
+/* } */
+
+.fotter-message{
+	text-align:center;
+	font-family: 'Mystery Quest', cursive;
+/* 	background:rgba(246, 255, 255, 1); */
+/* 	background:rgba(179, 233, 255, 1); */
+    background-color:black;
+	color:white;
+	font-weight: bold;
 }
+
+
+/*--------------------------------------------------------------------------*/
+/*検索*/
+.seach{
+background-image:url("../image/pastel2.jpg");
+border:2px solid #d0f7ee;
+width:180px;
+margin:0 auto;
+padding:5px;
+border-radius: 3px;
+}
+
+ /*購入*/
+ .pay{
+ background-image:url("../image/pastel2.jpg");
+border:2px solid #d0f7ee;
+width:180px;
+margin:0 auto;
+padding:5px;
+border-radius: 3px;
+
+ }
+
+
+/*--------------------------------------------------------------------------*/
 
 
 .red{
@@ -56,4 +191,8 @@ background-image:url("../image/hanabi2.jpg");
 /*floatの解除*/
 .clear{
 	clear:both;
+}
+
+.pay-push{
+	margin-top:70px;
 }

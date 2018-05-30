@@ -7,12 +7,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- CSSの読み込み -->
 <link rel="stylesheet" type="text/css" href="./css/basis.css">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/table.css">
 
 <title>Error Page</title>
 </head>
 <body>
+<s:include value="header.jsp"/>
+<div id="main">
 <h1>エラーが発生しました。</h1>
 <p>恐れ入りますが、<a href='<s:url action="HomeAction" />'>ログイン</a>からやり直してください。</p>
+
+
+<s:form action="HomeAction">
+<input id="submit_button" type="submit" value ="ログインへ">
+</s:form>
+</div>
+
+<s:include value="footer.jsp"/>
 </body>
 </html>
