@@ -28,6 +28,7 @@
 </div>
 
 <div>
+<div class="confirm">
 <h3>登録する内容は以下でよろしいですか。</h3>
 
 <table>
@@ -68,7 +69,7 @@
 
 </table>
 
-
+</div>
 
 
 </div>

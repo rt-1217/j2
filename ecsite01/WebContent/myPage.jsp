@@ -29,7 +29,7 @@
 
 <p>ユーザー情報を変更する場合は<a href='<s:url action="GoUserUpdateAction"/>'>こちら</a></p>
 <p>退会する場合は<a href='<s:url action="GoUserDeleteAction"/>'>こちら</a></p>
-<div>
+<div class="mypage">
 <s:form>
 <tr><td>
 ユーザー名：

@@ -15,11 +15,11 @@
 <s:include value="header.jsp"/>
 <div id="main">
 <h1>エラーが発生しました。</h1>
-<p>恐れ入りますが、<a href='<s:url action="HomeAction" />'>ログイン</a>からやり直してください。</p>
+<h2>恐れ入りますが、<a href='<s:url action="HomeAction" />'>ログイン</a>からやり直してください。</h2>
 
 
 <s:form action="HomeAction">
-<input id="submit_button" type="submit" value ="ログインへ">
+<input id="submit_button"class="button" type="submit" value ="ログインへ">
 </s:form>
 </div>
 

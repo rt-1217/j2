@@ -40,6 +40,7 @@ $('form').submit();
 <p>BuyItemConfirm</p>
 </div>
 <div>
+<div class="confirm">
 <s:form>
 
 <s:iterator value="buyItemDTOList">
@@ -93,6 +94,7 @@ onclick="submitAction('HomeAction')" /></td>
 onclick="submitAction('BuyItemConfirmAction')" /></td>
 </tr>
 </s:form>
+</div>
 </div>
 </div>
 <s:include value="footer.jsp"/>

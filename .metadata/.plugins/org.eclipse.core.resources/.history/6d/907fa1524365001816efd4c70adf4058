@@ -1,0 +1,33 @@
+package com.internousdev.ecsite.dao;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+import com.internousdev.ecsite.dto.SeachDTO;
+import com.internousdev.ecsite.util.DBConnector;
+import com.mysql.jdbc.PreparedStatement;
+
+public class SeachDAO {
+
+	private DBConnector db =new DBConnector();
+	private Connection con =db.getConnection();
+	private ArrayList<SearchDTO> seachDTOList = new ArrayList<SeachDTO>();
+
+	/**
+	 * すべての商品を表示
+	 */
+
+	public ArrayList<SearchDTO> allItemInfo(){
+		String sql  ="SELECT * FROM item_info_transaction";
+		try{
+			PreparedStatement ps=con.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+
+			while(rs.next()){
+				SearchDTO searchDTO =new SearchDTO
+			}
+
+		}
+	}
+
+}

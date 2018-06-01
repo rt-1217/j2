@@ -64,7 +64,7 @@
 
 <!-- <div id="button"> -->
 
-<s:submit class="button" value="商品を削除する"/>
+<s:submit  value="商品を削除する"/>
 
 <!-- </div> -->
 

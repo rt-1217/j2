@@ -22,7 +22,7 @@ public class BuyItemDAO {
 
 
 	public List<BuyItemDTO> getBuyItemInfo() {
-	String sql = "SELECT id, item_name, item_price,item_stock,image_file_path FROM item_info_transaction";
+	String sql = "SELECT id, item_name, item_price,item_stock,item_category,image_file_path FROM item_info_transaction";
 
 	//DBから取得した値をBuyItemDTOの変数に格納
 	//BuyItemDTOに格納した値をBuyItemDTOListに格納
@@ -40,6 +40,7 @@ public class BuyItemDAO {
 		dto.setItemName(resultSet.getString("item_name"));
 		dto.setItemPrice(resultSet.getString("item_price"));
 		dto.setItem_stock(resultSet.getInt("item_stock"));
+		dto.setItem_category(resultSet.getString("item_category"));
 		dto.setImage_file_path(resultSet.getString("image_file_path"));
 
 		buyItemDTOList.add(dto);

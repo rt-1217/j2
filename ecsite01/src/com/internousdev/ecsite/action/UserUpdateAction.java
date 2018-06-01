@@ -16,11 +16,12 @@ public class UserUpdateAction extends ActionSupport implements SessionAware {
 	private String checkPassword;
 	private String userName;
 	private String userAddress;
+
 	private String sex;
 	private String tell;
 	public Map<String,Object> session;
 	private String errorMessage;
-	private LoginDTO loginDTO = new LoginDTO();
+//	private LoginDTO loginDTO = new LoginDTO();
 
 	private UserCreateConfirmDAO userCreateConfirmDAO = new UserCreateConfirmDAO();
 

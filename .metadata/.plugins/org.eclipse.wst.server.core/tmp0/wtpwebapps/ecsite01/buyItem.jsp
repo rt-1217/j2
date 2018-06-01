@@ -34,6 +34,7 @@
 <s:form action="ItemSearchAction">
 <tr>
 <td>
+
 <s:textfield name="searchWord" value=""/>
 </td>
 <td>

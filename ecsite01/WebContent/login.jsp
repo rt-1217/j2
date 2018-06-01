@@ -27,8 +27,9 @@
 </div>
 <div>
 <h3>商品を購入する際にはログインをお願いします。</h3>
-
+<div class="login">
 <s:form action="LoginAction">
+
 <table>
 <tr>
 <td><label>ログインID:</label></td>
@@ -42,7 +43,9 @@
 
 <s:submit value ="ログイン"/>
 </table>
+
 </s:form>
+</div>
 <br/>
 <div id="text-link">
 <p>新規ユーザー登録は

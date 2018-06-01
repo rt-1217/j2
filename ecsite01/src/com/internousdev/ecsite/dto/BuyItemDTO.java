@@ -21,6 +21,8 @@ public class BuyItemDTO {
 
 	private int total_count;
 
+	private String item_category;
+
 	private String image_file_path;
 
 	public String getItemName() {
@@ -81,6 +83,14 @@ public class BuyItemDTO {
 	}
 	public void setTotal_count(int total_count){
 		this.total_count=total_count;
+	}
+
+	public String getItem_category() {
+		return item_category;
+	}
+
+	public void setItem_category(String item_category) {
+		this.item_category = item_category;
 	}
 
 

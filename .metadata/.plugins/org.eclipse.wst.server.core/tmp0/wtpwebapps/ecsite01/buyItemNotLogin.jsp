@@ -30,6 +30,7 @@
 
 <!-- 商品検索機能 -->
 <div>
+<div class="seach">
 <s:form action="ItemSearchAction">
 <tr>
 <td>
@@ -42,7 +43,7 @@
 <s:if test="message !=''">
 <h3><s:property value="message" escape="false"/></h3>
 </s:if>
-
+</div>
 
 
 <!-- 商品テーブル -->

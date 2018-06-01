@@ -85,8 +85,8 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 
 
 	public void delete() throws SQLException{
-		@SuppressWarnings("unchecked")
-		List<BuyItemDTO> buyItemDTOList = (List<BuyItemDTO>) session.get("list");
+//		@SuppressWarnings("unchecked")
+//		List<BuyItemDTO> buyItemDTOList = (List<BuyItemDTO>) session.get("list");
 		String user_master_id = session.get("login_user_id").toString();
 		MyPageDAO myPageDAO = new MyPageDAO();
 

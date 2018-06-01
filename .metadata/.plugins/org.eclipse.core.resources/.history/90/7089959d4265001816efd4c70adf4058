@@ -1,0 +1,9 @@
+package com.internousdev.ecsite.dao;
+
+public class SeachDAO {
+
+	private DBConnector db =new DBConnector();
+	private Connection con =db.getConnection();
+	private ArrayList<SeachDTO> seachDTOList = new ArrayList<SeachDTO>();
+
+}

@@ -30,6 +30,7 @@ id int not null primary key auto_increment,
 item_name varchar(30),
 item_price int,
 item_stock int,
+item_category int,
 image_file_path varchar(100),
 insert_date datetime,
 update_date datetime
@@ -49,16 +50,16 @@ insert_date datetime,
 delete_date datetime
 );
 
-INSERT INTO item_info_transaction(item_name,item_price,item_stock,image_file_path) VALUES
-("トマト",80,50,"./image/tomato.jpg"),
-("ニンジン",70,50,"./image/carrot.jpg"),
-("ピーマン",25,50,"./image/greenpepper.jpg"),
-("キャベツ",120,30,"./image/cabbage.jpg"),
-("カボチャ",250,20,"./image/pumpkin.jpg"),
-("リンゴ",100,30,"./image/apple.jpg"),
-("ブドウ",600,15,"./image/grape.jpg"),
-("メロン",2500,5,"./image/melon.jpg"),
-("スターフルーツ",300,10,"./image/starfruits.jpg");
+INSERT INTO item_info_transaction(item_name,item_price,item_stock,item_category,image_file_path) VALUES
+("トマト",80,50,"1","./image/tomato.jpg"),
+("ニンジン",70,50,"1","./image/carrot.jpg"),
+("ピーマン",25,50,"1","./image/greenpepper.jpg"),
+("キャベツ",120,30,"1","./image/cabbage.jpg"),
+("カボチャ",250,20,"1","./image/pumpkin.jpg"),
+("リンゴ",100,30,"2","./image/apple.jpg"),
+("ブドウ",600,15,"2","./image/grape.jpg"),
+("メロン",2500,5,"2","./image/melon.jpg"),
+("スターフルーツ",300,10,"2","./image/starfruits.jpg");
 INSERT INTO login_user_transaction(login_id,login_pass,user_name,user_address,user_sex,user_tell) VALUES
 ("jiro","456","test","saitama","男","09012345678"),
 ("taro","123","master","tokyo","男","09077777777");

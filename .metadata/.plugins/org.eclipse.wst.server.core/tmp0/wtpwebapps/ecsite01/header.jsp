@@ -26,7 +26,7 @@
 
 <div id="header">
 <div class="header-logo">
-<a href='<s:url action="GoHomeAction"/>'> O N L I N E   S H O P </a></div>
+ O N L I N E   S H O P </div>
 
 <div class="top-menu">
 

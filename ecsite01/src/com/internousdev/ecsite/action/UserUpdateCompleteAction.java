@@ -13,7 +13,7 @@ public class UserUpdateCompleteAction extends ActionSupport implements SessionAw
 
 	public Map<String, Object> session;
 	private UserUpdateCompleteDAO userUpdateCompleteDAO = new UserUpdateCompleteDAO();
-	private LoginDTO loginDTO = new LoginDTO();
+//	private LoginDTO loginDTO = new LoginDTO();
 	public String execute() throws SQLException{
 
 		String result =ERROR;

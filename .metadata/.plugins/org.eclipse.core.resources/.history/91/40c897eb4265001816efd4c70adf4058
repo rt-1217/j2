@@ -1,0 +1,22 @@
+package com.internousdev.ecsite.dao;
+
+import java.util.ArrayList;
+
+import com.internousdev.ecsite.dto.SeachDTO;
+import com.internousdev.ecsite.util.DBConnector;
+
+public class SeachDAO {
+
+	private DBConnector db =new DBConnector();
+	private Connection con =db.getConnection();
+	private ArrayList<SeachDTO> seachDTOList = new ArrayList<SeachDTO>();
+
+	/**
+	 * すべての商品を表示
+	 */
+
+	public ArrayList<SeachDTO> allProductInfo(){
+		String sql  ="SELECT * FROM product_info;"
+	}
+
+}
