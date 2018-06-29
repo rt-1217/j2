@@ -26,7 +26,7 @@
 
 <div id="footer">
 <div class="fotter-message">
-Copyright©2018 TEST. All Rights Reserved.
+Copyright©2018 GREENGROCER. All Rights Reserved.
 
 </div>
 

@@ -1,0 +1,13 @@
+127.0.0.1 - - [29/Jun/2018:13:53:54 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:53:57 +0900] "GET /regalo/ HTTP/1.1" 200 2450
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:07 +0900] "GET /regalo/StartAction HTTP/1.1" 200 8013
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:07 +0900] "GET /regalo/css/includeHeader.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:07 +0900] "GET /regalo/js/fade.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:07 +0900] "GET /regalo/images/haikei10.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:07 +0900] "GET /regalo/images/haikei12.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:07 +0900] "GET /regalo/images/haikei16.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:24 +0900] "POST /regalo/GoProductListAction.action HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:25 +0900] "POST /regalo/GoProductListAction.action HTTP/1.1" 200 17071
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:25 +0900] "GET /regalo/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:25 +0900] "GET /regalo/css/productList.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/Jun/2018:13:54:25 +0900] "GET /regalo/images/accessories3.jpg HTTP/1.1" 200 38302

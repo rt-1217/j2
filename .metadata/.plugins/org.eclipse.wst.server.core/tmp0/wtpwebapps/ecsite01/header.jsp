@@ -26,7 +26,7 @@
 
 <div id="header">
 <div class="header-logo">
- O N L I N E   S H O P </div>
+ G R E E N G R O C E R </div>
 
 <div class="top-menu">
 
@@ -43,7 +43,7 @@
 <li><a href='<s:url action="GoLoginAction"/>'>LOGIN</a></li>
 <li><a href='<s:url action="MyPageAction"/>'>MYPAGE</a></li>
 <li><a href='<s:url action="LogoutAction"/>'>LOGOUT</a></li>
-<li><a href='<s:url action="InquiryAction"/>'>MAIL</a></li>
+<%-- <li><a href='<s:url action="InquiryAction"/>'>MAIL</a></li> --%>
 </ul>
 
 </div>
