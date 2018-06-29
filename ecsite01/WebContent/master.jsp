@@ -28,7 +28,7 @@
 
 
 <div>
-<div>
+<div  id="master_link">
 <a href='<s:url action="GoItemInsertAction"/>'>新商品追加</a><br><br>
 <a href='<s:url action="GoItemUpdateAction"/>'>商品情報更新</a><br><br>
 <a href='<s:url action="GoItemDeleteAction"/>'>商品削除</a><br><br>
@@ -62,7 +62,7 @@
 
 <div>
 <%-- <p><a href='<s:url action="GoHomeAction" />'>ホーム</a></p> --%>
-<p><a href='<s:url action="LogoutAction" />'>ログアウト</a></p>
+<%-- <p><a href='<s:url action="LogoutAction" />'>ログアウト</a></p> --%>
 </div>
 
 </div></div>

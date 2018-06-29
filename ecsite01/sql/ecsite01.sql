@@ -1,9 +1,9 @@
 set names utf8;
 set foreign_key_checks = 0;
-drop database if exists ecsite03;
+drop database if exists ecsite01;
 
-create database if not exists ecsite03;
-use ecsite03;
+create database if not exists ecsite01;
+use ecsite01;
 
 
 /*ユーザーログイン情報テーブル*/

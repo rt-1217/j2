@@ -19,7 +19,7 @@
 
 
 <s:form action="HomeAction">
-<input id="submit_button"class="button" type="submit" value ="ログインへ">
+<input  type="submit" value ="ログインへ">
 </s:form>
 </div>
 

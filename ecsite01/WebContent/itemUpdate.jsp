@@ -24,9 +24,7 @@
 
 
 
-<div>
-<p>商品の情報</p>
-</div>
+
 <table>
 <s:form method="post" action="ItemUpdateAction">
 
