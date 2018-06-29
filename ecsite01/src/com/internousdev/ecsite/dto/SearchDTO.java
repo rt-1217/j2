@@ -42,7 +42,8 @@ public class SearchDTO {
 	public int getItemCategory(){
 		return itemCategory;
 	}
-	public void setItemCategory(int itemCategory){
+	public void setItemCategory(int
+			itemCategory){
 		this.itemCategory=itemCategory;
 	}
 

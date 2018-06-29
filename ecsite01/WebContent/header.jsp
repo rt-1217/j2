@@ -26,7 +26,7 @@
 
 <div id="header">
 <div class="header-logo">
- O N L I N E   S H O P </div>
+ G R E E N G R O C E R </div>
 
 <div class="top-menu">
 
